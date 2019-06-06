@@ -4,9 +4,7 @@ class Auth extends Component {
     render() {
         return (
             <div>
-                <form>
-                    test
-                </form>
+                test
             </div>
         )
     }
