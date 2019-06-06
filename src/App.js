@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react'
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
@@ -11,12 +11,24 @@ import Nav from './Components/Nav/Nav';
 import Post from './Components/Post/Post';
 
 
-function App() {
-  return (
-    <div className="App">
-     
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+      <Router>
+        <Switch>
+        <Route path="/" component={Auth}/>
+        <Route path="/dashboard" component={Dashboard}/>
+        <Route path="/form" component={Form}/>
+        <Route path="/nav" component={Nav}/>
+        <Route path="/post" component={Post}/>
+        </Switch>
+     </Router> 
     </div>
-  );
+    )
+  }
 }
+
 
 export default App;

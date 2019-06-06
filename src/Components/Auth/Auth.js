@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
 
-export default class Auth extends Component {
+class Auth extends Component {
     render() {
         return (
             <div>
-                Auth
+                <form>
+                    test
+                </form>
             </div>
         )
     }
 }
+
+export default Auth;
