@@ -30,3 +30,7 @@ const port = process.env.PORT || 7070;
 app.listen(port,()=>{
     console.log(`Running on port ${port}`)
 })  
+
+app.get('/api/ping', (req, res, next)=>{
+    res.send("this works")
+})
